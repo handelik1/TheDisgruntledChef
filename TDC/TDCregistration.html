@@ -1,0 +1,22 @@
+<head>
+
+	<link rel = "stylesheet" type = "text/css" href = "./css/bootstrap.css">	
+	<link rel = "stylesheet" type = "text/css" href = "./css/stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class = "app-area">
+		<h1>TheDisgruntledChef</h1>
+		<div class = "login">
+			<h2>Login</h2>
+				<form id = "reg-form" action = "homepage.php" method = "post">
+					<label>Create a Username:</label><input class = "userInput" type="text" name="new_username" size = "50" required><br><br>
+					<label>Create a Password:</label><input id = "password-box" class = "userInput" type="text" name="password" size = "50" required><br><br>
+					<label id = "confirm-label">Confirm Password:</label><input id = "password-confirm" class = "userInput" type="text" name="password" size = "50" required>
+					<input id = "create-button" type = "submit" name = "submit" value = "Create">
+				</form>
+		</div>
+
+	</div>
+</body>

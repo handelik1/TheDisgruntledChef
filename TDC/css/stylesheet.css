@@ -1,0 +1,797 @@
+body{
+	background-color: #ffffe5;
+	overflow-y: hidden;
+	overflow-x: hidden;  
+}
+
+.begin-hidden { 
+	display: none; 
+}
+
+.begin-invisible{
+	visibility: hidden;
+}
+
+.app-area{
+	width: 1100px;
+	height: 550px;
+	margin: auto;
+	position: relative;
+	top: 50px;
+	border-radius: 15px;
+	border: 2px solid black;
+	background-image: url("wood.jpg");
+	background-size: 700px 600px;
+}
+
+h1,h2{
+	color: black;
+	position: relative;
+	top: 5%;
+	text-align: center;
+}
+
+h3{
+	color: black;
+}
+
+label{
+	font-size: 18px;
+	color: black
+}
+
+.login{
+	width: 540px;
+	height: 300px;
+	margin: auto;
+	position: relative;
+	top: 70px;
+	border-radius: 15px;
+	border:1px solid black;
+	box-shadow: 0px 2px 3px 0px rgba(1,1,1,1);
+
+}
+
+.credientials{
+	color: black;
+	font-weight: bold;
+}
+
+.userInput{
+	position: relative;
+	left: 5px;
+	width: 211px;
+}
+
+form{
+	position: relative;
+	top: 30px;
+	left: 15px;
+
+}
+
+#password-box{
+	position: relative;
+	left:8px;
+}
+
+input[type="submit"], button, .logout, .this_step, #submit-back{
+	position: relative;
+	top: 20px;
+	left: 223px;
+	border: 1px solid black;
+	padding: 10px 30px;
+	background-color: #c3834c;
+	font-weight: bold;
+	color: black;
+	border-radius: 7px;
+}
+input[type="submit"]:hover, .submit:hover, button:hover, .this_step:hover, .logout:hover, #submit-back:hover{
+	background-color: #614126;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.logout{
+	text-decoration: none;
+	top: -990px;
+	left: 76px;
+}
+
+#logout{
+	text-decoration: none;
+	left: 71px;
+}
+
+.submit{
+	position: relative;
+	top: -214px;
+	width: 125px;
+	left: 375px;
+	border: 1px solid black;
+	padding: 10px 30px;
+	background-color: #c3834c;
+	font-weight: bold;
+	color: black;
+	border-radius: 7px;
+}
+
+.submit{
+	color: black;
+}
+
+.submit:hover{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.submit a{
+	color: black;
+}
+
+.submit:hover> a{
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+#facebook{
+	position: relative;
+	top: -59px;
+	width: 180px;
+	height: 42px;
+}
+
+#chef{
+	position: relative;
+	top: -315px;
+	left: 575px;
+	width: 150px;
+	height: 200px;
+}
+
+#register{
+	position: relative;
+	top:-164px;
+	left: 375px;
+	text-align: center;
+}
+
+
+
+/*********Registration**********/
+
+#reg-form{
+	position: relative;
+
+}
+
+#password-confirm{
+	position: relative;
+	top:-5px;
+	left: 11px;
+}
+#confirm-label{
+	position: relative;
+	top:-5px;
+}
+#create-button{
+	position: relative;
+	left: -140px;
+	top: 50px;
+}
+
+#success{
+	position: relative;
+	left: 112px;
+	top: 80px;
+	font-size: 22px;
+	color: black;
+}
+
+/*******Nav********/
+
+#nav{
+	list-style-type: none;
+	position: relative;
+	top: 32px;
+}
+
+#nav li{
+	position: relative;
+	width: 173px;
+	border: 1px solid black;
+	padding: 10px 30px;
+	background-color: #c3834c;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 7px;
+	margin:30px 0px;
+}
+
+#nav a{
+	color: black;
+}
+
+#nav a:hover{
+	color: white;
+	text-decoration: none;
+	background-color: #614126;
+}
+
+
+#nav li:hover > a{
+
+	background-color: #614126;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#nav li:hover{
+	background-color: #614126;
+	color: white;
+	cursor: pointer;
+
+}
+
+
+#content{
+	position: relative;
+	left: 320px;
+	top: -340px;
+	overflow: scroll;
+	overflow-x: hidden; 
+	height: 400px;
+	width: 475px;
+}
+
+.food{
+	width: 475px;
+	height: 475px;
+}
+
+.food-link{
+	color: black;
+	width: 200px;
+}
+
+.food-link:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.check:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.home-recipe{
+	width: 425px;
+	height: 350px;
+	overflow-y: hidden;
+}
+
+#recipe_name{
+	position: absolute;
+	padding-right: 400px;
+	padding-left: 0px;
+	top: -40px;
+	left: 0px;
+	width: 200px;
+	background: none;
+	border:none;
+	font-size: 22px;
+	font-weight: bold;
+
+}
+
+#recipe_name:hover{
+	color: #800020;
+}
+
+#rating-button{
+	position: relative;
+	top: -30px;
+	left: 140px;
+	margin-bottom: 10px;
+}
+
+/*******Rating********/
+
+.rating {
+    float:left;
+}
+
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:.1em;
+    padding:0 .1em;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:250%;
+    line-height:.8;
+    color:#000;
+    background: none;
+    border: none;
+}
+
+.rating:not(:checked) > label:before {
+    content: 'O';
+}
+
+.rating > input:checked ~ label {
+    color: red;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: red;
+}
+
+#food_rating{
+	position: relative;
+	left:575px;
+	top: -375px;
+	overflow: auto;
+	height: 360px;
+}
+
+legend{
+	color: black;
+	width: 300px;
+	border-bottom: 3px solid black;
+	margin-bottom: 12px;
+}
+
+#back-button{
+	position: relative;
+	width: 95px;
+	top: 325px;
+	left: 30px;
+	border: 1px solid black;
+	padding: 10px 30px;
+	background-color: #c3834c;
+	font-weight: bold;
+	color: black;
+	border-radius: 7px;
+	list-style-type: none;
+	cursor: pointer;
+	z-index: 4;
+}
+
+
+#back-button:hover{
+	background-color: #614126;
+	text-decoration: none;
+}
+a:hover > #back-button{
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+#sub-button{
+	position: relative;
+	width: 150px;
+	top: 30px;
+	left: -5px;
+	border: 1px solid black;
+	padding: 10px 30px;
+	background-color: #c3834c;
+	font-weight: bold;
+	color: black;
+	border-radius: 7px;
+	list-style-type: none;
+}
+
+#sub-button a{
+	width:50px;
+	color: black;
+	text-decoration: none;
+}
+
+#sub-button a:hover{
+	line-height: 1px;
+	color: black;
+	color: white;
+	text-decoration: none;
+	background-color: #614126;
+}
+
+#sub-button:hover{
+	background-color: #614126;
+	text-decoration: none;
+	color: white;
+}
+#sub-button:hover > a{
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.recipe_to_rate{
+	width: 300px;
+	height: 300px;
+	position:relative;
+	left: 230px;
+	top: -42px;
+}
+
+/***********Prep Screen************/
+
+#recipe-name{
+	position: relative;
+	top: 10px;
+
+}
+
+#ingredient-list{
+	position: relative;
+	left: 295px;
+	top: 50px;
+	width:840px;
+	line-height: 50px;
+}
+
+#ingredient-box{
+	display: inline;
+	margin: 0px 5px;
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    padding: 10px;
+
+}
+
+label{
+  display:inline; 
+  margin-top:10px;
+  color:black;
+  text-align:center;
+  position: relative;
+  right: 35px;
+  padding: 35px 10px;
+  margin: 10px 30px;
+  background-color: #c3834c;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid black;
+  z-index: 4;
+  cursor: pointer;
+}
+
+input:checked + label{
+  background-color: #614126;
+  color: white;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+#notice{
+	position: relative;
+	top: -830px;
+	left: 300px;
+	width: 550px;
+	height: 300px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 50px;
+	font-size: 36px;
+	padding-top: 50px;
+	z-index: 7;
+	text-align: center;
+	color: black;
+	background-color: lightgreen;
+}
+
+#dismiss{
+	color: black;
+	position: relative;
+	top: 40px;
+	left: 225px;
+	width: 100px;
+	height: 50px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-size: 18px;
+	z-index: 7;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 10px;
+	background-color: #79c879;
+
+}
+
+#amounts{
+	position: relative;
+	font-size: 28px;
+}
+
+#amount-span{
+	margin: 10px 10px;
+}
+
+.ingredient-table{
+	position: relative;
+	top: 110px;
+	left: 350px;
+}
+
+.ingredient-table td{
+	color: black;
+	font-size: 28px;
+}
+
+#ingredient-pic{
+	width: 75px;
+	height: 75px;
+}
+
+#get-cookin{
+	position: relative;
+	top: -427px;
+	left: 870px;
+}
+
+#mysteps{
+	border-right: 2px solid black;
+	position: relative;
+	width: 200px;
+	top: -155px;
+	left:10px;
+	height: 550px;
+
+}
+
+.this_step{
+	display: block;
+	height: 36px;
+	width: 183px;
+	margin: 7px 0px;
+	padding: 7px;
+	position: relative;
+	top: 15px;
+	left: 2px;
+
+}
+
+#full_recipe{
+	position: relative;
+	top: 30px;
+	left: 2px;
+}
+
+
+#i-container{
+	position: relative;
+	font-size: 24px;
+	left: 495px;
+	bottom: 500px;
+	width:375px;
+}
+
+.showInstruction{
+	color: black;
+	
+}
+
+
+#m-container{
+	position: relative;
+	left: 357px;
+	bottom: 450px;
+
+
+}
+
+.showMediaButton{
+	font-size: 32px;
+	height: 150px;
+	width: 150px;
+}
+
+.showMedia{
+	border: 1px solid black;
+	position: relative;
+	left: 47px;
+	bottom: 23px;
+	width: 200px;
+	height: 200px;
+
+}
+
+#close{
+	position: relative;
+	top: -679px;
+	left: 741px;
+	color:white;
+	font-weight: bold;
+	border: 1px solid black;
+	padding-left: 5px;
+	line-height: 14px;
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	cursor: pointer;
+}
+
+#full-recipe{
+	position: absolute;
+	bottom: 30px;
+	left: 452px;
+	border: 2px solid black;
+	width: 400px;
+	font-weight: bold;
+	background-color: white;
+	padding: 20px;
+}
+
+#hide_full_recipe{
+	left: 2px;
+	top: 30px;
+	padding: 10px 33px;
+}
+
+#home-button {
+	position: relative;
+	top: 130px;
+	left: -199px;
+}
+
+/*******Submit*******/
+
+.remove-style{
+	background: none;
+	border: none;
+	padding: 0px;
+	cursor: default;
+	margin: 0px;
+	right: 0px;
+}
+
+.add-recipe{
+	display: block;
+	position: relative;
+	left: 365px;
+    margin: auto;
+}
+
+#submit_table1{
+	position: relative;
+	bottom: 10px;
+}
+
+#submit_step1{
+	position: relative;
+	left:465px;
+}
+
+#number_of_ingredients{
+	position: relative;
+	left: 438px;
+	bottom:120px;
+}
+
+#numberLabel{
+	position: relative;
+	left: 400px;
+	bottom: 127px;
+}
+
+.ingredient-drop{
+	display: block;
+	position: relative;
+	left: 140px;
+	top: 25px;
+	border-radius: 1px;
+}
+
+#drop_container{
+	position: relative;
+	left: 100px;
+	top: -20px;
+	display: block;
+	overflow: auto;
+	overflow-x: hidden; 
+	height: 355px;
+	width: 800px;
+}
+#drop_container1{
+	position: relative;
+	left: 300px;
+	top: 0px;
+	display: block;
+	overflow: auto;
+	overflow-x: hidden; 
+	height: 355px;
+	width: 488px;
+}
+
+.input_amount{
+	position: relative;
+	top: -1px;
+	left:375px;
+}
+
+.howMuch{
+	position: relative;
+	left: 368px;
+	top: 0px;
+}
+
+.food_pic{
+	position: relative;
+	left: 378px;
+	top: 0px;
+}
+
+.input_class{
+	left: 381px;
+}
+
+#submit_step2{
+	position: relative;
+	left: 608px;
+	top: 20px;
+}
+#submit_step3{
+	position: relative;
+	left: 272px;
+}
+#clone-button{
+	position: relative;
+	top: -330px;
+	left: 915px;
+}
+
+#step_label{
+	position: relative;
+	top: -110px;
+	left: 190px;
+}
+
+#recipe_step{
+	margin-bottom: 25px;
+}
+
+#submit-button{
+	position: relative;
+	bottom: 558px;
+	left: -72px;
+	border: 1px solid black;
+	padding: 10px 30px;
+	background-color: #c3834c;
+	font-weight: bold;
+	color: black;
+	border-radius: 7px;
+}
+
+#submit-button:hover{
+	background-color: #614126;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#submit-back{
+	left: 40px;
+	top: -3px;
+}
